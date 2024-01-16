@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/2eb9e79cba.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poem For My Life</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Dancing Script', cursive;
+      color: #DC143C;
+      text-shadow: 0 0 5px #fff; /* Soft glow effect */
+      margin: 0;
+      background: radial-gradient(circle, #f7e5d1, #ebc59d); /* Warm gradient background */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: twinkle 7s ease-in-out infinite; /* Gentle twinkle */
+    }
+
+    @keyframes twinkle {
+      0% { background-position: 0 0; }
+      50% { background-position: 50px 50px; }
+      100% { background-position: 0 0; }
+    }
+
+    .container {
+      width: 60%;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative; /* For heart animation */
+    }
+
+    p {
+      font-size: 1.5em;
+      line-height: 1.5;
+      opacity: 0; /* Initially hidden for reveal */
+      animation: reveal 7s ease-in-out forwards; /* Line reveal animation */
+    }
+
+    @keyframes reveal {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      100% { opacity: 1; } /* Keep lines visible */
+    }
+
+    .heart {
+      position: absolute;
+      top: 0;
+      left: 30%;
+      transform: translateX(-50%);
+      opacity: 0;
+      animation: heart-beat 2.75s ease-in-out infinite; /* Subtle heart animation */
+    }
+
+    @keyframes heart-beat {
+      0% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.2); }
+      100% { opacity: 0.2; transform: scale(1); }
+    }
+
+    /* Add other styles or personal touches here */
+
+    @media only screen and (max-width: 768px) {
+      .container {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart">Two Souls, One Beat ❤️</div>
+    <p>Lahari, a name that sings and sighs,
+Like summer breeze through starlit skies.
+Your eyes, twin pools of moonlit grace,
+Reflect a smile that warms my space.</p>
+    <p>Your laughter, like a tinkling chime,
+Holds magic woven into rhyme.
+Your touch, a feather light and soft,
+A whisper heard, a promise caught.</p>
+    <p>We walk hand-in-hand on sunlit days,
+Through fields of green and silvered haze.
+We share secrets beneath the night,
+With dreams that dance in candlelight.</p>
+    <p>My heart, a compass, finds its way,
+Guided by your laughter's gentle sway.
+In you, my love, my world is whole,
+A symphony for heart and soul.</p>
+    <p>So let the years, like seasons, roll,
+Our love, a story yet untold.
+With every beat, my love for you grows,
+Lahari, my muse, my heart's repose.</p>
+  </div>
+</body>
+</html>
